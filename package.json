@@ -1,11 +1,19 @@
 {
-  "name": "tdigest",
+  "name": "tdigest-sd",
   "version": "1.0.0",
-  "description": "An implementation of tdigest.",
+  "description": "An implementation of tdigest with serialization and deserialization for space-efficient storage.",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyleburnett/tdigest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kyleburnett/tdigest/issues"
+  },
+  "homepage": "https://github.com/kyleburnett/tdigest",
   "scripts": {
     "test": "grunt test"
   },
