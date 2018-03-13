@@ -31,4 +31,4 @@ jobs:
             # Store minimied javascript
             - store_artifacts:
                 path: dist/tdigest.min.js
-                destination: browser
+                destination: tdigest.min.js
