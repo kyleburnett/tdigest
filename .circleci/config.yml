@@ -9,26 +9,26 @@ jobs:
       - checkout
 
       # Restore node_modules from cache
-      - restore_cache
+      - restore_cache:
         key: node_modules-{{ checksum "package.json" }}
 
       # Run preinstallation/build step
-      - run
+      - run:
         name: Install node_modules
         command: npm install -g grunt-cli && npm install
 
       # Save node_modules to cache
-      - save_cache
+      - save_cache:
         key: node_modules-{{ checksum "package.json" }}
         paths:
           - node_modules
 
       # Run tests and build
-      - run
+      - run:
         name: Run Tests and Build
         command: grunt
 
       # Store minimied javascript
-      - store_artifacts
+      - store_artifacts:
         path: dist/tdigest.min.js
         destination: browser
