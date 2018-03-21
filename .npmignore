@@ -1,0 +1,11 @@
+# Build
+dist
+
+# Test
+test
+
+# Continuous Integration
+.circleci
+
+# Task runner
+Gruntfile.js
