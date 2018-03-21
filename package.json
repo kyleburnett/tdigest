@@ -1,6 +1,6 @@
 {
   "name": "tdigest-sd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An implementation of tdigest with serialization and deserialization for space-efficient storage.",
   "main": "index.js",
   "directories": {
@@ -10,6 +10,13 @@
     "type": "git",
     "url": "https://github.com/kyleburnett/tdigest.git"
   },
+  "keywords": [
+    "tdigest",
+    "percentile",
+    "quantile",
+    "histogram",
+    "approximation"
+  ],
   "bugs": {
     "url": "https://github.com/kyleburnett/tdigest/issues"
   },

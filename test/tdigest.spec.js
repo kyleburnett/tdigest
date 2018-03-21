@@ -372,7 +372,7 @@ describe('deserialize', function() {
         var tdigest = new TDigest();
         var serialized = tdigest.serialize();
         var tdigest2 = new TDigest();
-        tdigest2.deserialize(serialized)
+        tdigest2.deserialize(serialized);
         expect(tdigest2).to.deep.equal(tdigest);
     });
 
@@ -381,7 +381,7 @@ describe('deserialize', function() {
         tdigest.push(0);
         var serialized = tdigest.serialize();
         var tdigest2 = new TDigest();
-        tdigest2.deserialize(serialized)
+        tdigest2.deserialize(serialized);
         expect(tdigest2).to.deep.equal(tdigest);
     });
 
@@ -390,7 +390,7 @@ describe('deserialize', function() {
         tdigest.push([0, 1]);
         var serialized = tdigest.serialize();
         var tdigest2 = new TDigest();
-        tdigest2.deserialize(serialized)
+        tdigest2.deserialize(serialized);
         expect(tdigest2).to.deep.equal(tdigest);
     });
 
@@ -399,7 +399,7 @@ describe('deserialize', function() {
         tdigest.push([0, 0.5, 1]);
         var serialized = tdigest.serialize();
         var tdigest2 = new TDigest();
-        tdigest2.deserialize(serialized)
+        tdigest2.deserialize(serialized);
         expect(tdigest2).to.deep.equal(tdigest);
     });
 
@@ -408,7 +408,7 @@ describe('deserialize', function() {
         tdigest.push([10, 11, 12, 13]);
         var serialized = tdigest.serialize();
         var tdigest2 = new TDigest();
-        tdigest2.deserialize(serialized)
+        tdigest2.deserialize(serialized);
         expect(tdigest2).to.deep.equal(tdigest);
     });
 
@@ -423,7 +423,7 @@ describe('deserialize', function() {
         tdigest.push(x);
         var serialized = tdigest.serialize();
         var tdigest2 = new TDigest();
-        tdigest2.deserialize(serialized)
+        tdigest2.deserialize(serialized);
         expect(tdigest2).to.deep.equal(tdigest);
     });
 });
